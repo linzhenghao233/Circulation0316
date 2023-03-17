@@ -43,6 +43,7 @@
 
 int main(void) {
 	int num1, num2, i, min, common_divisor;
+	common_divisor = 0;
 
 	printf("输入两个整数：");
 	scanf_s("%d %d", &num1, &num2);
