@@ -20,7 +20,7 @@
 //}
 
 //int main(void) {
-//	int A, B, C, D, i, status[5];
+//	int A, B, C, D, i;
 //	char max;
 //
 //	A = 1 - 1;
@@ -30,13 +30,13 @@
 //
 //	max = A < B ? (B < C ? (C < D ? D:C): (max = B < D ? D : B)): (A < C ? (C < D ? D : C) : (A < D ? D : A));
 //	if (max == A)
-//		printf("A×îÓĞÏÓÒÉ¡£");
+//		printf("Aæœ€æœ‰å«Œç–‘ã€‚");
 //	else if(max == B)
-//		printf("B×îÓĞÏÓÒÉ¡£");
+//		printf("Bæœ€æœ‰å«Œç–‘ã€‚");
 //	else if(max == C)
-//		printf("C×îÓĞÏÓÒÉ¡£");
+//		printf("Cæœ€æœ‰å«Œç–‘ã€‚");
 //	else if(max == D)
-//		printf("D×îÓĞÏÓÒÉ¡£");
+//		printf("Dæœ€æœ‰å«Œç–‘ã€‚");
 //
 //	return 0;
 //}
@@ -45,14 +45,14 @@ int main(void) {
 	int num1, num2, i, min, common_divisor;
 	common_divisor = 0;
 
-	printf("ÊäÈëÁ½¸öÕûÊı£º");
+	printf("è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼š");
 	scanf_s("%d %d", &num1, &num2);
 	min = num1 < num2 ? num1 : num2;
 	for (i = 1; i <= min; i++) {
 		if (num1 % i == 0 && num2 % i == 0)
 			common_divisor = i;
 	}
-	printf("×î´ó¹«Ô¼ÊıÎª£º%d", common_divisor);
+	printf("æœ€å¤§å…¬çº¦æ•°ä¸ºï¼š%d", common_divisor);
 
 	return 0;
 }
